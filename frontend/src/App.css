@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.App {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.App>header {
+    background-color: #007aff;
+    padding: 5px 100px;
+}
+
+nav ul li {
+    list-style-type: none;
+
+}
+
+nav ul {
+    padding:0px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 0px 10px;
+}
+
+main header {
+    background-color: #414141;
+    padding: 1px 100px;
+    box-shadow: 0px 5px 15px 3px rgb(99, 98, 98);
+}
+
+li a {
+    padding: 6px 10px;
+    display: inline-block;
+}
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a.button {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #414141;
+    color: white;
+}
+
+main {
+    min-height: 750px;
+    padding-bottom: 40px;
+}
+
+.screen-options{
+    padding: 20px 100px;
+    color: #414141;
+}
+
+.screen-options a {
+    color: #414141;
+}
+
+.screen-options a.button {
+    color: #fff;
+}
+
+.screen-options > ul {
+
+    background-color: rgb(216, 216, 216);
+    border-radius: 5px;
+    min-height:50px;
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:10px;
+
+}
+
+.screen-options li {
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.hidden{
+    display:none
+}
+
+.loader{
+    padding: 0px 100px;
+    color:#414141;
+}
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    justify-content: space-between;
+}
+
+main .container::after {
+    content: "";
+    flex: auto;
+}
+
+main .container .movie-banner {
+    width: 145px;
+    height: 220px;
+    margin: 15px;
+
+
+}
+
+.movie-banner > p {
+    color: black;
+    font-size:14px;
+}
+
+.movie-banner-image {
+    background-color: black;
+    position: relative;
+    height:200px;
+
+}
+
+.movie-banner-image > img {
+    width: 170%;
+    left: -35%;
+    top: 20%;
+    position: relative;
+
+}
+
+.movie-banner-image > p {
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pager {
+    padding:0px 100px;
+}
+
+.pager > nav > ul{
+
+    height:50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.pager a {
+    border: 1px solid #007aff;
+    border-radius: 13px;
+    padding:5px 7px;
+    font-size:15px;
+    color: #007aff;
+}
+
+footer {
+    background-color: #1e1e1e;
+    padding: 20px 100px;
+    margin-top: auto;
+}
+
+#footer-links ul {
+
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+
+}
+
+#footer-links li + li {
+    border-left: 1px solid #bbb;
+}
+
+#footer-social-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-social-links ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer-social-links img {
+    display: inline-block;
+}
+
+#footer-social-links img.social {
+    width: 30px;
+    height: 30px;
+}
+
+#footer-social-links img.store {
+    width: 100px;
+    height: 30px;
+}
+
+#copyright small {
+    padding: 6px 10px;
+    color: #afafaf;
+}
+
+
+@media(max-width: 600px){
+
+    .App>header, main header, .screen-options, main .container, .screen-options, footer {
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #footer-social-links ul li, #footer-links ul li{
+
+        flex-basis: 50%;
+
+    }
+
+    .screen-options  ul li {
+
+        flex-basis: 50%;
+        height: 35px;
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+
+
+    }
+
+    main .container .movie-banner {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .container .movie-banner-image {
+        width: 140px;
+
+    }
+
+    #footer-links li + li {
+
+        border-left: none;
+
+    }
+
+}

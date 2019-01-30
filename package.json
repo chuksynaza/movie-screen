@@ -1,0 +1,15 @@
+{
+  "name": "moviescreen",
+  "version": "1.0.0",
+  "description": "movi",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "start:frontend": "cd frontend && npm start --silent",
+    "start:backend": "cd backend && npm start",
+    "test:frontend": "cd frontend && npm test",
+    "test:backend": "cd backend && npm test"
+  },
+  "author": "Olisa Chukwunazaekpere Chuksy",
+  "license": "ISC"
+}
