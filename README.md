@@ -30,7 +30,7 @@ This command starts the backend application, by default this application would l
 $ npm run start:frontend
 ```
 
-This command starts the frontend application, before starting it it also runs the build script. On default the frontend application listens on port 3000
+This command starts the frontend application. On default the frontend application listens on port 3000
 
 ## Usage
 
